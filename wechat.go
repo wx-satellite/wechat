@@ -1,6 +1,7 @@
 package wechat
 
 import (
+	"fmt"
 	"os"
 
 	"github.com/silenceper/wechat/v2/cache"
@@ -18,7 +19,7 @@ import (
 func init() {
 	// Log as JSON instead of the default ASCII formatter.
 	log.SetFormatter(&log.TextFormatter{})
-
+	fmt.Println(1234)
 	// Output to stdout instead of the default stderr
 	// Can be any io.Writer, see below for File example
 	log.SetOutput(os.Stdout)
